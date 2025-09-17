@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="dark">
+
+<head>
+    <!-- ======================================================= -->
+    <!-- PODSTAWOWE META TAGI -->
+    <!-- ======================================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Odzież - Jarosław, os. 1000-lecia 12</title>
+    <meta name="description" content="Sklep z odzieżą używaną w Jarosławiu. Najlepsze ceny, codzienne nowości. Zapraszamy na osiedle 1000-lecia 12.">
+    
+    <!-- === Favicon - POPRAWIONA WERSJA BEZ UKOŚNIKÓW === -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- ============================================= -->
+
+    <!-- ======================================================= -->
+    <!-- IKONY I CZCIONKI -->
+    <!-- ======================================================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- ======================================================= -->
+    <!-- GŁÓWNY ARKUSZ STYLÓW CSS -->
+    <!-- ======================================================= -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================================================= -->
+    <!-- NAGŁÓWEK STRONY (HEADER) -->
+    <!-- ======================================================= -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo strony -->
+            <a href="#" class="logo-link">
+                <img src="images/logo_dark.png" alt="Logo Tania Odzież" class="logo-img logo-dark">
+                <img src="images/logo.png" alt="Logo Tania Odzież" class="logo-img logo-light">
+            </a>
+
+                        <!-- Panel nawigacji i przełącznika motywu dla wersji desktop -->
+            <div class="header-right-panel">
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#contact">Kontakt</a></li>
+                        <li><a href="sklepy.html">Nasze inne sklepy</a></li>
+                        <li><a href="#news">Aktualności</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle" />
+                        <span class="slider">
+                            <div class="slider-icon"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div>
+                        </span>
+                    </label>
+                </div>
+            </div>
+            <!-- Przycisk do otwierania menu na urządzeniach mobilnych -->
+            <button class="mobile-nav-toggle" aria-label="Otwórz menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ======================================================= -->
+        <!-- SEKCJA POWITALNA (HERO) -->
+        <!-- ======================================================= -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="fade-in-up">Odkryj Modowe Skarby<br><span>w Twojej Okolicy</span></h1>
+                <p class="fade-in-up">Odkryj starannie wyselekcjonowaną odzież używaną w najlepszych cenach. W naszym sklepie każdego dnia znajdziesz coś nowego dla siebie i całej rodziny. Dbamy o jakość i Twój styl.</p>
+                <a href="#contact" class="btn fade-in-up">Odwiedź nas</a>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SEKCJA Z DYNAMICZNYM LICZNIKIEM DOSTAWY -->
+        <!-- ======================================================= -->
+        <section id="delivery-countdown" class="delivery-countdown">
+            <div class="container">
+                <h2 class="fade-in-up">Polowanie na okazje czas zacząć!</h2>
+                <p class="fade-in-up">Nowy, świeży towar pojawia się w naszym sklepie regularnie. Nie przegap najlepszych perełek!</p>
+                <div class="countdown-timer fade-in-up" id="countdown-timer">
+                    <div id="countdown-message">Ładowanie licznika...</div>
+                    <div class="timer-container" id="timer-container">
+                        <div class="time-block"><span class="time-value" id="days">00</span><span class="time-label">Dni</span></div>
+                        <div class="time-block"><span class="time-value" id="hours">00</span><span class="time-label">Godzin</span></div>
+                        <div class="time-block"><span class="time-value" id="minutes">00</span><span class="time-label">Minut</span></div>
+                        <div class="time-block"><span class="time-value" id="seconds">00</span><span class="time-label">Sekund</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SEKCJA GALERII ZDJĘĆ -->
+        <!-- ======================================================= -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <h2 class="fade-in-up">Zobacz nasz sklep:</h2>
+                <div class="gallery-showcase fade-in-up">
+                    <div class="gallery-image-wrapper">
+                        <img src="images/6.jpg" alt="Wnętrze sklepu 2">
+                        <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-image-wrapper">
+                        <img src="images/3.jpg" alt="Ubrania na wieszakach">
+                        <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-image-wrapper">
+                        <img src="images/4.jpg" alt="Półka z dodatkami">
+                        <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-image-wrapper">
+                        <img src="images/2.jpg" alt="Wnętrze sklepu 1">
+                        <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-image-wrapper">
+                        <img src="images/2.jpg" alt="Półka z dodatkami">
+                        <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <div class="gallery-image-wrapper">
+                        <img src="images/1.jpg" alt="Półka z dodatkami">
+                        <div class="image-overlay"><i class="fas fa-search-plus"></i></div>
+                    </div>
+                    <!-- Poniżej 2 dodatkowe miejsca na zdjęcia. Wypełnione powtórzonymi obrazami. -->
+                    <!-- Możesz podmienić 'src' na nowe pliki, gdy będziesz je miał. -->
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SEKCJA AKTUALNOŚCI I INFORMACJI -->
+        <!-- ======================================================= -->
+        <section id="news" class="news">
+            <div class="container">
+                <div class="news-reviews-grid">
+                    <!-- Kolumna z aktualnościami z Facebooka -->
+                    <div class="news-column fade-in-up">
+                        <div class="column-content-top">
+                            <h2>Aktualności z naszego Facebooka:</h2>
+                            <div class="news-carousel-container">
+                                <article class="news-slide active"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftania.odziez.58511%2Fposts%2Fpfbid03Z4cFpRbzrBFNjs23mKE2uUbNpzU7iR4vau9JY1dTw4ECav13TjGTrAX5UKLeitpl&show_text=true&width=500" width="400" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></article>
+                                <article class="news-slide"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftania.odziez.58511%2Fposts%2Fpfbid0hF81rcxKAreoxLAECXWTmhYEB7bmzMjRud2rk1anqKhxjAzmBk9vgC5BZWEUitbsl&show_text=true&width=500" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></article>
+                                <article class="news-slide"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftania.odziez.58511%2Fposts%2Fpfbid0JazkZvEE6hLwwmvc6Sg3jN7Y8HbFiMeSumXtYR79shKUP7TvkA4kbp3PuNZXrnXhl&show_text=true&width=500" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></article>
+                            </div>
+                        </div>
+                        <div class="text-center"><a href="https://www.facebook.com/tania.odziez.58511" target="_blank" class="btn">Zobacz więcej na Facebooku</a></div>
+                    </div>
+
+                    <!-- Kolumna z informacjami (ocena, godziny otwarcia) -->
+                    <div class="reviews-column fade-in-up">
+                         <div class="column-content-top">
+                            <h2>Informacje:</h2>
+                            <div class="reviews-content-wrapper">
+                                <div class="google-rating">
+                                    <h3>Ocena Google 4.5 / 5</h3>
+                                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                                </div>
+                                <div class="opening-hours-card">
+                                    <h4><i class="far fa-clock"></i> Godziny otwarcia</h4>
+                                    <ul class="hours-list">
+                                        <li><span>Poniedziałek</span> <strong>09:00 - 17:00</strong></li>
+                                        <li><span>Wtorek</span> <strong>09:00 - 17:00</strong></li>
+                                        <li><span>Środa</span> <strong>09:00 - 17:00</strong></li>
+                                        <li><span>Czwartek</span> <strong>09:00 - 17:00</strong></li>
+                                        <li><span>Piątek</span> <strong>09:00 - 17:00</strong></li>
+                                        <li><span>Sobota</span> <strong>09:00 - 14:00</strong></li>
+                                        <li><span>Niedziela</span> <strong>Zamknięte</strong></li>
+                                    </ul>
+                                </div>
+                                <p class="delivery-info"><i class="fas fa-box-open"></i> Nowa dostawa w każdą środę co 2 tygodnie!</p>
+                            </div>
+                        </div>
+                        <div class="text-center"><a href="https://www.google.com/search?sca_esv=7363e84110bffb1e&rlz=1C1ASUM_enPL978PL978&sxsrf=AE3TifPJy-3P02YV7aeHgfrUVxyxiN3DBw:1757539980257&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-Ez4tNG6WVHSBqP0iyA9qARGByEkA1kBmAQXc-iGmJkah8TDDQr6jZAZpc4iZVZJv7Q9trI6cP9A7z-pVRoe-Sw--LhW2JwiSuJcgvgeuUKtIGMO0yg%3D%3D&q=Sklep+Tania+Odzie%C5%BC+Opinie&sa=X&ved=2ahUKEwiZsM7Rks-PAxVPFhAIHYvRAeYQ0bkNegQIJRAD&biw=1745&bih=866&dpr=1.1" target="_blank" class="btn">Dodaj opinię w Google</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================= -->
+        <!-- SEKCJA KONTAKTU I MAPY -->
+        <!-- ======================================================= -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="fade-in-up">Skontaktuj się lub odwiedź nas</h2>
+                <div class="contact-grid">
+                    <!-- Formularz kontaktowy -->
+                    <div class="contact-form-wrapper fade-in-up">
+                        <h3>Napisz do nas</h3>
+                        <form id="contact-form" action="https://formspree.io/f/xwpnzpql" method="POST" class="contact-form">
+                            <div class="form-group"><label for="name">Imię</label><input type="text" id="name" name="name" required></div>
+                            <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
+                            <div class="form-group"><label for="message">Wiadomość</label><textarea id="message" name="message" rows="5" required></textarea></div>
+                            <!-- NAPRAWA: Dodano div z klasą .text-center, aby przycisk był wyśrodkowany na mobile -->
+                            <div class="text-center">
+                                <button type="submit" class="btn">Wyślij</button>
+                            </div>
+                        </form>
+                        <div id="form-status"></div>
+                    </div>
+
+                    <!-- Mapa i adres -->
+                    <div class="map-wrapper fade-in-up">
+                        <h3>Znajdziesz nas tutaj</h3>
+                        <div class="map-container"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.573901438259!2d22.66533937715023!3d50.000490718501655!2m3!1f0!2f0!3f0!3m2!i1024!i768!4f13.1!3m3!1m2!1s0x473c9c1b489a7a97%3A0x8929e0a0d5885287!2sOsiedle%201000-lecia%2012%2C%2037-500%20Jaros%C5%82aw!5e0!3m2!1spl!2spl!4v1715891784654!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        <p class="address"><i class="fas fa-map-marker-alt"></i> osiedle 1000-lecia 12, 37-500 Jarosław</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ======================================================= -->
+<!-- STOPKA STRONY (FOOTER) - UJEDNOLICONA -->
+<!-- ======================================================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Kolumna 1: Nawigacja -->
+            <div class="footer-column">
+                <h4>Nawigacja</h4>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="sklepy.html">Nasze sklepy</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolumna 2: Główny sklep -->
+            <div class="footer-column">
+                <h4>Główny sklep</h4>
+                <p><i class="fas fa-map-marker-alt"></i> os. 1000-lecia 12<br>37-500 Jarosław</p>
+                <p><i class="fas fa-clock"></i> Pon-Pt: 9-17, Sob: 9-14</p>
+            </div>
+
+            <!-- Kolumna 3: Obserwuj nas -->
+            <div class="footer-column">
+                <h4>Obserwuj nas</h4>
+                <p>Bądź na bieżąco z dostawami i promocjami!</p>
+                <div class="footer-social-links">
+                    <a href="https://www.facebook.com/tania.odziez.58511" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linia oddzielająca -->
+        <hr class="footer-separator">
+
+        <!-- Informacja o prawach autorskich -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tania Odzież. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </div>
+</footer>
+    
+    <!-- ======================================================= -->
+    <!-- LIGHTBOX (MODAL DO POWIĘKSZANIA ZDJĘĆ) -->
+    <!-- ======================================================= -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="close-lightbox-btn">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <!-- ======================================================= -->
+    <!-- GŁÓWNY SKRYPT JAVASCRIPT -->
+    <!-- ======================================================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>

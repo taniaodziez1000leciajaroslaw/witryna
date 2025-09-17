@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="dark">
+
+<head>
+    <!-- ======================================================= -->
+    <!-- PODSTAWOWE META TAGI -->
+    <!-- ======================================================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Odzież - Nasze sklepy</title>
+    <meta name="description" content="Sprawdź lokalizacje wszystkich naszych sklepów z tanią odzieżą. Adresy i godziny otwarcia.">
+
+    <!-- === Favicon - POPRAWIONA WERSJA BEZ UKOŚNIKÓW === -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- ============================================= -->
+
+
+    <!-- ======================================================= -->
+    <!-- IKONY I CZCIONKI -->
+    <!-- ======================================================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- ======================================================= -->
+    <!-- GŁÓWNY ARKUSZ STYLÓW CSS -->
+    <!-- ======================================================= -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ======================================================= -->
+    <!-- NAGŁÓWEK STRONY (HEADER) -->
+    <!-- ======================================================= -->
+    <header class="header">
+        <div class="header-container">
+            <!-- Logo strony -->
+            <a href="index.html" class="logo-link">
+                <img src="images/logo_dark.png" alt="Logo Tania Odzież" class="logo-img logo-dark">
+                <img src="images/logo.png" alt="Logo Tania Odzież" class="logo-img logo-light">
+            </a>
+
+            <!-- Panel nawigacji i przełącznika motywu dla wersji desktop -->
+            <div class="header-right-panel">
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                        <li><a href="#">Nasze inne sklepy</a></li>
+                        <li><a href="index.html#news">Aktualności</a></li>
+                    </ul>
+                </nav>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="theme-toggle">
+                        <input type="checkbox" id="theme-toggle" />
+                        <span class="slider">
+                            <div class="slider-icon"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div>
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Przycisk do otwierania menu na urządzeniach mobilnych -->
+            <button class="mobile-nav-toggle" aria-label="Otwórz menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ======================================================= -->
+        <!-- SEKCJA Z LISTĄ SKLEPÓW -->
+        <!-- ======================================================= -->
+        <section class="stores-page">
+            <div class="container">
+                <!-- Nawigacja okruszkowa (Breadcrumbs) -->
+                <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                    <ol>
+                        <li><a href="index.html">Strona główna</a></li>
+                        <li><span aria-current="page">Nasze inne sklepy</span></li>
+                    </ol>
+                </nav>
+
+                <!-- Nagłówek sekcji -->
+                <div class="stores-header">
+                    <h1 class="fade-in-up">Nasze sklepy</h1>
+                    <p class="fade-in-up">Na sieć sprzedażową naszych dyskontów składają się sklepy detaliczne oraz hurtownie. Poniżej znajdziecie wszystkie nasze sklepy, ich adresy oraz godziny otwarcia.</p>
+                </div>
+
+                <!-- Filtry do sortowania sklepów -->
+                <div class="filters fade-in-up">
+                    <div class="filter-group">
+                        <label for="filter-wojewodztwo">Filtry:</label>
+                        <select id="filter-wojewodztwo">
+                            <option value="wszystkie">Wybierz województwo</option>
+                            <option value="mazowieckie">Mazowieckie</option>
+                            <option value="podkarpackie">Podkarpackie</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-miasto" style="opacity:0;">Miasto</label>
+                        <select id="filter-miasto">
+                            <option value="wszystkie">Wybierz miasto</option>
+                            <option value="jarosław">Jarosław</option>
+                            <option value="warszawa">Warszawa</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Siatka z kartami sklepów -->
+                <div class="stores-grid">
+                    <div class="store-card fade-in-up" data-wojewodztwo="podkarpackie" data-miasto="jarosław">
+                        <div class="store-image">
+                            <img src="images/4.jpg" alt="Sklep w Jarosławiu">
+                            <a href="https://maps.app.goo.gl/3Jq9pBfQj2v6S7X97" target="_blank" class="map-link">
+                                <i class="fas fa-map-marker-alt"></i><span>Znajdź na mapie</span>
+                            </a>
+                        </div>
+                        <div class="store-info">
+                            <h3>Jarosław, Os. 1000-lecia 12</h3>
+                            <p class="store-hours"><strong>Godziny otwarcia:</strong> pon-pt: 09:00-17:00, sb: 09:00-14:00</p>
+                            <p class="store-details"><strong>Nowy towar:</strong> środa co 2 tydzień<br></p>
+                            <a href="tel:+48123456789" class="btn-call-mobile"><i class="fas fa-phone"></i> Zadzwoń</a>
+                        </div>
+                    </div>
+                    <div class="store-card fade-in-up" data-wojewodztwo="mazowieckie" data-miasto="warszawa">
+                        <div class="store-image">
+                            <img src="images/tania.jpg" alt="Sklep na powsińskiej">
+                            <a href="https://share.google/87MDrEQ5DIz8NbLiV" target="_blank" class="map-link">
+                                <i class="fas fa-map-marker-alt"></i><span>Sprawdź lokalizacje</span>
+                            </a>
+                        </div>
+                        <div class="store-info">
+                            <h3>Warszawa, ul. Powsińska 25</h3>
+                            <p class="store-hours"><strong>Godziny otwarcia:</strong> pon-pt: 09:00-19:00, sb: 9:00-14:00</p>
+                            <p class="store-details"><strong>Nowy towar:</strong>środa co 2 tydzień</p>
+                            <a href="tel:+48123456789" class="btn-call-mobile"><i class="fas fa-phone"></i> Zadzwoń</a>
+                        </div>
+                    </div>
+                    <div class="store-card fade-in-up" data-wojewodztwo="mazowieckie" data-miasto="warszawa">
+                        <div class="store-image">
+                            <img src="images/targowa.jpg" alt="Sklep na targowej">
+                            <a href="https://maps.app.goo.gl/8vUuR9fWb1oZ2gC88" target="_blank" class="map-link">
+                                <i class="fas fa-map-marker-alt"></i><span>Znajdź na mapie</span>
+                            </a>
+                        </div>
+                        <div class="store-info">
+                            <h3>Warszwawa, Targowa 39A</h3>
+                            <p class="store-hours"><strong>Godziny otwarcia:</strong> pon-pt: 09:00-19:00, sb: 10:00-15:00</p>
+                            <p class="store-details"><strong>Nowy towar: </strong>wtorek co 2 tydzień</p>
+                            <a href="tel:+48123456789" class="btn-call-mobile"><i class="fas fa-phone"></i> Zadzwoń</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<!-- ======================================================= -->
+<!-- STOPKA STRONY (FOOTER) - UJEDNOLICONA -->
+<!-- ======================================================= -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Kolumna 1: Nawigacja -->
+            <div class="footer-column">
+                <h4>Nawigacja</h4>
+                <ul>
+                    <li><a href="index.html">Strona główna</a></li>
+                    <li><a href="sklepy.html">Nasze sklepy</a></li>
+                    <li><a href="index.html#contact">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolumna 2: Główny sklep -->
+            <div class="footer-column">
+                <h4>Główny sklep</h4>
+                <p><i class="fas fa-map-marker-alt"></i> os. 1000-lecia 12<br>37-500 Jarosław</p>
+                <p><i class="fas fa-clock"></i> Pon-Pt: 9-17, Sob: 9-14</p>
+            </div>
+
+            <!-- Kolumna 3: Obserwuj nas -->
+            <div class="footer-column">
+                <h4>Obserwuj nas</h4>
+                <p>Bądź na bieżąco z dostawami i promocjami!</p>
+                <div class="footer-social-links">
+                    <a href="https://www.facebook.com/tania.odziez.58511" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Linia oddzielająca -->
+        <hr class="footer-separator">
+
+        <!-- Informacja o prawach autorskich -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tania Odzież. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </div>
+</footer>
+    
+    <!-- ======================================================= -->
+    <!-- LIGHTBOX (MODAL DO POWIĘKSZANIA ZDJĘĆ) -->
+    <!-- ======================================================= -->
+    <div id="imageLightbox" class="lightbox">
+        <span class="close-lightbox-btn">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
+
+    <!-- ======================================================= -->
+    <!-- GŁÓWNY SKRYPT JAVASCRIPT -->
+    <!-- ======================================================= -->
+    <script src="script.js"></script>
+
+</body>
+</html>
