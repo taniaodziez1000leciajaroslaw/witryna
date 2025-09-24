@@ -928,7 +928,7 @@ input:checked ~ .slider > .slider-icon { transform: translateX(26px); }
 .stores-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    gap: 40px;
+    gap: 70px;
 }
 .store-card {
     background: var(--bg-secondary-color); border-radius: 10px; overflow: hidden;
@@ -941,7 +941,7 @@ input:checked ~ .slider > .slider-icon { transform: translateX(26px); }
 }
 .store-image {
     position: relative;
-    height: 250px;
+    height: 300px;
 }
 .store-image img {
     width: 100%;
