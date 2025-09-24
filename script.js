@@ -51,9 +51,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Inicjalizacja motywu przy ładowaniu strony (sprawdza zapisany wybór lub ustawia domyślny).
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    applyTheme(savedTheme);
+    // Inicjalizacja motywu przy ładowaniu strony. Zawsze startuje z ciemnym motywem.
+    const initialTheme = 'dark';
+    applyTheme(initialTheme);
+
 
     // Dodanie logiki do głównego, desktopowego przełącznika.
     const mainThemeToggle = document.getElementById('theme-toggle');
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             mainNav.appendChild(mobileToggle);
             addThemeToggleListener(mobileInput); // Dodanie logiki do sklonowanego przełącznika.
-            syncToggles(savedTheme); // Synchronizacja stanu sklonowanego przełącznika.
+            syncToggles(initialTheme); // Synchronizacja stanu sklonowanego przełącznika.
         }
 
         // Logika otwierania i zamykania menu mobilnego po kliknięciu w "hamburger".
